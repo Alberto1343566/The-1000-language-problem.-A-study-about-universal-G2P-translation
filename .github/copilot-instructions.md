@@ -44,8 +44,10 @@
 
 ## Qué puede pedirte Copilot / agente AI 💡
 - Añadir una CLI para `training.py` y `chec.py` (aceptar argumentos de archivo, checkpoint y salida).
-- Centralizar las funciones de evaluación en una utilidad compartida para evitar duplicación entre `KalkulatorDeep.py` y `Phonetisaurus/Kalkulator.py`.
-- Añadir un script de validación que verifique la existencia y tamaño de los archivos críticos (`TruDistance.txt`, `guidewf*.txt`, `data.txt`) y que limpie archivos de salida antes de ejecutar.
+- Centralizar las funciones de evaluación en una utilidad compartida para evitar duplicación entre `KalkulatorDeep.py` y `Kalkulator.py`.
+- Añadir un script de validación que verifique la existencia y tamaño de los archivos críticos (`TruDistance.txt`, `guidewf*.txt`, `data.txt`) y que limpie archivos de salida antes de ejecutar. Ya existe `tools/validate_inputs.py` — úsalo así:
+  - Validar: `python tools/validate_inputs.py --check`
+  - Limpiar archivos generados: `python tools/validate_inputs.py --clean --yes`
 
 ---
 
